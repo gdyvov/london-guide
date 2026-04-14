@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        if (document.cookie.indexOf("london_guide_theme=light") !== -1) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    </script>
+    <meta name="view-transition" content="same-origin" />
+    <script>
+      try {
+        if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.classList.add("pt");
+        }
+      } catch (e) {}
+    </script>
+    <title>Cheap cafés, pubs &amp; eats — London on a Budget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="logo logo--brand" href="../index.html">
+          <span class="logo__mark" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 56"
+              width="28"
+              height="40"
+              fill="none"
+            >
+              <path fill="#6A123D" d="M18 14h4v36h-4z" />
+              <path fill="#460023" d="M20 4L12 16h16z" />
+              <rect
+                x="17"
+                y="24"
+                width="6"
+                height="8"
+                rx="1"
+                fill="#D38DAF"
+                opacity="0.95"
+              />
+            </svg>
+          </span>
+          <span class="logo__wordmark">
+            <span class="logo__top">Budget</span>
+            <span class="logo__london">London</span>
+            <span class="logo__bottom"
+              >Guide <span class="logo__heart" aria-hidden="true">♥</span></span
+            >
+          </span>
+        </a>
+        <div class="site-header__tools">
+          <button
+            type="button"
+            class="theme-toggle"
+            title="Theme"
+            aria-pressed="false"
+            aria-label="Switch to light theme"
+          >
+            <span class="theme-toggle__sun" aria-hidden="true">&#9728;</span>
+            <span class="theme-toggle__moon" aria-hidden="true">&#9790;</span>
+          </button>
+          <div class="nav-pill" aria-label="Site menu">
+            <nav class="nav-pill__nav" aria-label="Primary">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="free-sights.html">Free sights</a></li>
+                <li>
+                  <a href="cheap-eats.html" aria-current="page">Cheap Eats</a>
+                </li>
+                <li><a href="transport.html">Transport</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="nav-pill__search-wrap">
+              <svg
+                class="nav-pill__icon-search"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+              <input
+                type="search"
+                class="nav-pill__search"
+                placeholder="Search on london-guide.com"
+                aria-label="Search"
+                name="q"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-panel"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="nav-panel"
+      id="nav-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="nav-panel-title"
+      aria-hidden="true"
+    >
+      <div class="container">
+        <p class="nav-panel__title" id="nav-panel-title">Navigation</p>
+        <ul class="nav-panel__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="free-sights.html">Free sights</a></li>
+          <li><a href="cheap-eats.html">Cheap Eats</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-panel__search">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
+          <input
+            type="search"
+            placeholder="Search on london-guide.com"
+            aria-label="Search"
+            name="q-panel"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero hero--compact" aria-label="Cheap eats">
+        <div class="hero__media">
+          <img
+            src="../images/eats/new-market-exterior.jpg"
+            alt="Full English breakfast in a London caff"
+            width="1280"
+            height="853"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+          <span class="hero__badge">cafés · pubs · counters</span>
+          <h1>Cafés, pubs &amp; cheap plates</h1>
+          <p class="lead">
+            Sit-down rooms, caff fry-ups, pub kitchens, and food halls — the same
+            city as the tourist menus, roughly half the price if you know where
+            to look.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-intro container fade">
+        <h2>Eat well without the bill shock</h2>
+        <p>
+          Skip souvenir-strip cafés: neighbourhood <strong>speciality coffee</strong>
+          shops and bakeries do drink-plus-pastry for less than hotel brunch.
+          <strong>Classic caffs</strong> plate fry-ups and jacket potatoes for
+          small change before noon. <strong>Pubs</strong> run daytime menus and
+          lunch boards until mid-afternoon — often the cheapest sit-down dinner
+          zone if you avoid premium ale houses. Add <strong>Chinatown</strong>
+          set lunches, Korean or Japanese tray counters under £9, falafel and
+          mezze shops, and salt-beef off Brick Lane. <strong>Food halls</strong>
+          near stations bundle noodles, roti, and sushi without a booking fee. At
+          markets, one hot dish plus a walk to the river beats a window-table
+          surcharge. Tap water is free; in pubs, check if service is already on
+          the receipt.
+        </p>
+      </section>
+
+      <section class="section-block container">
+        <h3 class="fade">Cafés, pubs, counters &amp; markets</h3>
+        <div class="card-grid">
+          <article
+            class="card card--modal fade"
+            data-place-modal="eat-coffee"
+            tabindex="0"
+            role="button"
+            aria-label="More about cafés and breakfast deals"
+          >
+            <div class="card__image">
+              <img
+                src="../images/eats/latte.jpg"
+                alt="Cup of coffee"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Cafés &amp; bakeries</h4>
+              <p>
+                Independent roasters and bakeries: flat white plus croissant or
+                cardamom bun, often under a chain brunch. Follow the morning
+                queue of locals.
+              </p>
+              <span class="card__tag">under £5–7</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="eat-caff"
+            tabindex="0"
+            role="button"
+            aria-label="More about caffs and greasy spoons"
+          >
+            <div class="card__image">
+              <img
+                src="../images/eats/full-english.jpg"
+                alt="Full English breakfast on a plate"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Caffs &amp; greasy spoons</h4>
+              <p>
+                Formica counters, builder’s tea, and full breakfasts at
+                prices that haven’t heard of “small plates”. Order at the till;
+                cash can still win when the card machine plays up.
+              </p>
+              <span class="card__tag">fry-up</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="eat-pub"
+            tabindex="0"
+            role="button"
+            aria-label="More about pub kitchens and lunch menus"
+          >
+            <div class="card__image">
+              <img
+                src="../images/eats/fish-chips.jpg"
+                alt="Fish and chips — typical pub counter meal"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Pub kitchens &amp; lunch boards</h4>
+              <p>
+                Burgers, pies, curry clubs, and chalkboard specials — pubs are
+                some of London’s most honest cheap restaurants. Check kitchen
+                hours; food service can end before the bar fills up.
+              </p>
+              <span class="card__tag">sit-down</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="eat-hall"
+            tabindex="0"
+            role="button"
+            aria-label="More about food halls and counter dining"
+          >
+            <div class="card__image">
+              <img
+                src="../images/eats/borough-veg.jpg"
+                alt="Busy indoor food market with stalls"
+                width="800"
+                height="533"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Food halls &amp; counters</h4>
+              <p>
+                Station arches and office atriums: buzzer queues, benches, and
+                visible portions — noodles, roti bowls, sushi sets, often £7–11
+                with no booking drama.
+              </p>
+              <span class="card__tag">quick</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="eat-pizza"
+            tabindex="0"
+            role="button"
+            aria-label="More about street food and world lunch spots"
+          >
+            <div class="card__image">
+              <img
+                src="../images/eats/new-tacos.jpg"
+                alt="Falafel and salad — affordable world food"
+                width="800"
+                height="600"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>World food &amp; small restaurants</h4>
+              <p>
+                Bánh mì, bibimbap, gözleme, salt-beef bagels — side-street rooms
+                and Asian supermarket food courts pack flavour for £6–9 away
+                from the main drag.
+              </p>
+              <span class="card__tag">global</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="eat-borough"
+            tabindex="0"
+            role="button"
+            aria-label="More about Borough Market"
+          >
+            <div class="card__image">
+              <img
+                src="../images/eats/new-market-exterior.jpg"
+                alt="Borough Market"
+                width="800"
+                height="533"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Borough Market</h4>
+              <p>
+                Grills, cheese, bread, and traders from all over — pick one hot
+                dish or a small plate to share, then walk five minutes to the
+                Thames. Go Tuesday–Thursday to dodge the worst Saturday crush.
+              </p>
+              <span class="card__tag">Southwark</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__bar container">
+        <div class="footer-legal-pill">
+          <a href="#">Cookies</a>
+          <span>·</span>
+          <a href="#">Privacy</a>
+          <span>·</span>
+          <a href="#">Terms and conditions</a>
+        </div>
+        <button type="button" class="back-to-top" aria-label="Back to top">
+          ↑
+        </button>
+      </div>
+      <p class="site-footer__meta">
+        London Budget Guide · Student project · 2026
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

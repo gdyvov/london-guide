@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        if (document.cookie.indexOf("london_guide_theme=light") !== -1) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    </script>
+    <meta name="view-transition" content="same-origin" />
+    <title>Natural History Museum — Full guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="logo logo--brand" href="../index.html">
+          <span class="logo__mark" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 56"
+              width="28"
+              height="40"
+              fill="none"
+            >
+              <path fill="#6A123D" d="M18 14h4v36h-4z" />
+              <path fill="#460023" d="M20 4L12 16h16z" />
+              <rect
+                x="17"
+                y="24"
+                width="6"
+                height="8"
+                rx="1"
+                fill="#D38DAF"
+                opacity="0.95"
+              />
+            </svg>
+          </span>
+          <span class="logo__wordmark">
+            <span class="logo__top">Budget</span>
+            <span class="logo__london">London</span>
+            <span class="logo__bottom"
+              >Guide <span class="logo__heart" aria-hidden="true">♥</span></span
+            >
+          </span>
+        </a>
+        <div class="site-header__tools">
+          <button
+            type="button"
+            class="theme-toggle"
+            title="Theme"
+            aria-pressed="false"
+            aria-label="Switch to light theme"
+          >
+            <span class="theme-toggle__sun" aria-hidden="true">&#9728;</span>
+            <span class="theme-toggle__moon" aria-hidden="true">&#9790;</span>
+          </button>
+          <div class="nav-pill" aria-label="Site menu">
+            <nav class="nav-pill__nav" aria-label="Primary">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li>
+                  <a href="../pages/free-sights.html" aria-current="page">Free sights</a>
+                </li>
+                <li><a href="../pages/cheap-eats.html">Cheap Eats</a></li>
+                <li><a href="../pages/transport.html">Transport</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="nav-pill__search-wrap">
+              <svg
+                class="nav-pill__icon-search"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+              <input
+                type="search"
+                class="nav-pill__search"
+                placeholder="Search on london-guide.com"
+                aria-label="Search"
+                name="q"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-panel"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="nav-panel"
+      id="nav-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="nav-panel-title"
+      aria-hidden="true"
+    >
+      <div class="container">
+        <p class="nav-panel__title" id="nav-panel-title">Navigation</p>
+        <ul class="nav-panel__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../pages/free-sights.html">Free sights</a></li>
+          <li><a href="../pages/cheap-eats.html">Cheap Eats</a></li>
+          <li><a href="../pages/transport.html">Transport</a></li>
+          <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <main class="guide-page" id="top">
+      <section class="guide-page__hero" aria-hidden="true">
+        <img
+          src="../images/sights/nh-facade.jpg"
+          alt=""
+          width="1280"
+          height="720"
+          decoding="async"
+        />
+      </section>
+      <article class="container guide-page__article">
+        <header>
+          <h1>Natural History Museum</h1>
+          <p class="guide-page__lead">
+            Cromwell Road, South Kensington · Free entry (donations welcome)
+          </p>
+        </header>
+        <div class="guide-page__content">
+          <p>
+            From dinosaurs and the blue whale in Hintze Hall to volcanoes and
+            gemstones, the museum is a full-day visit. Entry is free; some
+            temporary exhibitions are paid and should be booked online in school
+            holidays.
+          </p>
+          <h2>Queues</h2>
+          <p>
+            Weekends and school breaks are packed — arrive for opening or book a
+            paid exhibition slot if you want a timed entry. South Kensington Tube
+            is closest; the V&A and Science Museum are next door if you want to
+            hop between free museums.
+          </p>
+          <h2>Hintze Hall</h2>
+          <p>
+            Look up at the blue whale skeleton and the Romanesque arches — it’s
+            the usual “wow” moment on entry. Dippy the diplodocus tours nationally
+            sometimes; check what’s on display before you go.
+          </p>
+        </div>
+        <section class="guide-page__gallery" aria-label="Photos">
+          <figure class="guide-page__figure">
+            <img
+              src="../images/sights/nh-facade.jpg"
+              alt="Natural History Museum facade"
+              width="960"
+              height="640"
+              loading="lazy"
+            />
+            <figcaption>Terracotta façade on Cromwell Road.</figcaption>
+          </figure>
+          <figure class="guide-page__figure">
+            <img
+              src="../images/sights/nh-dippy.jpg"
+              alt="Hintze Hall with whale"
+              width="960"
+              height="640"
+              loading="lazy"
+            />
+            <figcaption>Hintze Hall — blue whale overhead.</figcaption>
+          </figure>
+          <figure class="guide-page__figure">
+            <img
+              src="../images/sights/nh-hintze.jpg"
+              alt="Ceiling arches Hintze Hall"
+              width="960"
+              height="640"
+              loading="lazy"
+            />
+            <figcaption>Arches and ceiling detail.</figcaption>
+          </figure>
+        </section>
+        <p class="guide-page__back">
+          <a href="../pages/free-sights.html">← Back to Free sights</a>
+        </p>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__bar container">
+        <div class="footer-legal-pill">
+          <a href="#">Cookies</a>
+          <span>·</span>
+          <a href="#">Privacy</a>
+          <span>·</span>
+          <a href="#">Terms and conditions</a>
+        </div>
+        <button type="button" class="back-to-top" aria-label="Back to top">
+          ↑
+        </button>
+      </div>
+      <p class="site-footer__meta">
+        London Budget Guide · Student project · 2026
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>

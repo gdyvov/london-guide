@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        if (document.cookie.indexOf("london_guide_theme=light") !== -1) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      } catch (e) {}
+    </script>
+    <meta name="view-transition" content="same-origin" />
+    <script>
+      try {
+        if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+          document.documentElement.classList.add("pt");
+        }
+      } catch (e) {}
+    </script>
+    <title>Transport — London on a Budget</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-header__inner container">
+        <a class="logo logo--brand" href="../index.html">
+          <span class="logo__mark" aria-hidden="true">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 40 56"
+              width="28"
+              height="40"
+              fill="none"
+            >
+              <path fill="#6A123D" d="M18 14h4v36h-4z" />
+              <path fill="#460023" d="M20 4L12 16h16z" />
+              <rect
+                x="17"
+                y="24"
+                width="6"
+                height="8"
+                rx="1"
+                fill="#D38DAF"
+                opacity="0.95"
+              />
+            </svg>
+          </span>
+          <span class="logo__wordmark">
+            <span class="logo__top">Budget</span>
+            <span class="logo__london">London</span>
+            <span class="logo__bottom"
+              >Guide <span class="logo__heart" aria-hidden="true">♥</span></span
+            >
+          </span>
+        </a>
+        <div class="site-header__tools">
+          <button
+            type="button"
+            class="theme-toggle"
+            title="Theme"
+            aria-pressed="false"
+            aria-label="Switch to light theme"
+          >
+            <span class="theme-toggle__sun" aria-hidden="true">&#9728;</span>
+            <span class="theme-toggle__moon" aria-hidden="true">&#9790;</span>
+          </button>
+          <div class="nav-pill" aria-label="Site menu">
+            <nav class="nav-pill__nav" aria-label="Primary">
+              <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="free-sights.html">Free sights</a></li>
+                <li><a href="cheap-eats.html">Cheap Eats</a></li>
+                <li>
+                  <a href="transport.html" aria-current="page">Transport</a>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="nav-pill__search-wrap">
+              <svg
+                class="nav-pill__icon-search"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <circle cx="11" cy="11" r="7" />
+                <path d="M21 21l-4.35-4.35" />
+              </svg>
+              <input
+                type="search"
+                class="nav-pill__search"
+                placeholder="Search on london-guide.com"
+                aria-label="Search"
+                name="q"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="nav-panel"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div
+      class="nav-panel"
+      id="nav-panel"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="nav-panel-title"
+      aria-hidden="true"
+    >
+      <div class="container">
+        <p class="nav-panel__title" id="nav-panel-title">Navigation</p>
+        <ul class="nav-panel__links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="free-sights.html">Free sights</a></li>
+          <li><a href="cheap-eats.html">Cheap Eats</a></li>
+          <li><a href="transport.html">Transport</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-panel__search">
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="7" />
+            <path d="M21 21l-4.35-4.35" />
+          </svg>
+          <input
+            type="search"
+            placeholder="Search on london-guide.com"
+            aria-label="Search"
+            name="q-panel"
+            autocomplete="off"
+          />
+        </div>
+      </div>
+    </div>
+
+    <main id="top">
+      <section class="hero hero--compact" aria-label="Transport">
+        <div class="hero__media">
+          <img
+            src="../images/transport/new-night-bus.jpg"
+            alt="Red London double-decker bus — Hopper buses"
+            width="1280"
+            height="853"
+            fetchpriority="high"
+            decoding="async"
+          />
+        </div>
+        <div class="hero__overlay" aria-hidden="true"></div>
+        <div class="hero__content">
+          <span class="hero__badge">Oyster · contactless</span>
+          <h1>Move for less</h1>
+          <p class="lead">
+            Oyster or contactless on TfL: same fares, automatic daily caps, Hopper
+            buses, and a few rules that are easy to get right once you know them.
+          </p>
+        </div>
+      </section>
+
+      <section class="page-intro container fade">
+        <h2>Fares that cap themselves</h2>
+        <p>
+          Transport for London (TfL) runs most of the <strong>Underground</strong>,
+          <strong>DLR</strong>, <strong>Elizabeth line</strong> (within London),
+          <strong>London Overground</strong>, <strong>London Trams</strong>, and
+          <strong>buses</strong> on one pay-as-you-go scale when you touch in and
+          out with <strong>Oyster</strong> or <strong>contactless</strong> (bank
+          card or mobile wallet). Journeys add up until you hit a
+          <strong>daily cap</strong> for the zone combination you actually used —
+          after that, further rides that day in the same cap “bucket” are not
+          charged extra (caps are updated each year; check the official TfL table
+          before you travel). <strong>Paper Day Travelcards</strong> from
+          machines usually cost more than letting contactless cap — use paper only
+          if you have no tap card.
+        </p>
+      </section>
+
+      <section class="section-block container">
+        <h3 class="fade">Quick guides — tap a card</h3>
+        <div class="card-grid">
+          <article
+            class="card card--modal fade"
+            data-place-modal="trans-bus"
+            tabindex="0"
+            role="button"
+            aria-label="More about London buses and Hopper fare"
+          >
+            <div class="card__image">
+              <img
+                src="../images/transport/bus-routemaster.jpg"
+                alt="London double-decker bus — Hopper fare"
+                width="800"
+                height="533"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Buses &amp; Hopper</h4>
+              <p>
+                Flat fare, tap once when you board, then unlimited bus and tram
+                hops within an hour — ideal for short hops and sightseeing.
+              </p>
+              <span class="card__tag">Hopper</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="trans-tube"
+            tabindex="0"
+            role="button"
+            aria-label="More about Tube zones and touching out"
+          >
+            <div class="card__image">
+              <img
+                src="../images/transport/new-tube-entrance.jpg"
+                alt="London Underground train — zones and peak fares"
+                width="800"
+                height="533"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Tube &amp; zones</h4>
+              <p>
+                Fares follow zones and peak times — always touch out on yellow
+                readers, even if the barriers are open.
+              </p>
+              <span class="card__tag">zones</span>
+            </div>
+          </article>
+
+          <article
+            class="card card--modal fade"
+            data-place-modal="trans-oyster"
+            tabindex="0"
+            role="button"
+            aria-label="More about Oyster card"
+          >
+            <div class="card__image">
+              <img
+                src="../images/transport/oyster-card.png"
+                alt="Oyster pay-as-you-go card"
+                width="800"
+                height="506"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            <div class="card__body">
+              <h4>Oyster card</h4>
+              <p>
+                Top-up plastic with the same fares and caps as contactless —
+                handy for Railcard discounts and fewer bank taps abroad.
+              </p>
+              <span class="card__tag">PAYG</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <section class="section-block container">
+        <h3 class="fade">Short notes — tap to expand</h3>
+        <div class="notes-accordion fade">
+          <details class="note-item">
+            <summary>Oyster card</summary>
+            <p>
+              Reusable blue card for TfL. Top up at machines, use PAYG fares and
+              daily caps. Good if you want fewer foreign-card charges and possible
+              Railcard discounts on eligible routes.
+            </p>
+          </details>
+          <details class="note-item">
+            <summary>Contactless card or phone</summary>
+            <p>
+              Same fares and caps as Oyster. Register your card on TfL for journey
+              history and refunds. Do not mix different cards/devices in one day or
+              your cap may not combine correctly.
+            </p>
+          </details>
+          <details class="note-item">
+            <summary>Zones, peak times, touch out</summary>
+            <p>
+              Zone 1-2 is most central London; Heathrow is zone 6. Peak weekday
+              windows cost more on many rail journeys. Always touch out even if gates
+              are open to avoid maximum fare charges.
+            </p>
+          </details>
+          <details class="note-item">
+            <summary>Bus vs Tube</summary>
+            <p>
+              Buses are flat fare and scenic; Tube is faster for long hops. For short
+              city centre moves, bus can be cheaper than multiple Tube changes.
+            </p>
+          </details>
+          <details class="note-item">
+            <summary>Hopper fare</summary>
+            <p>
+              After first bus/tram tap, unlimited extra bus/tram rides within one hour
+              are included. Hopper applies only to buses and trams, not Tube or rail.
+            </p>
+          </details>
+          <details class="note-item">
+            <summary>Elizabeth line, DLR, Night Tube</summary>
+            <p>
+              Elizabeth line and DLR use Oyster/contactless inside London. Night Tube
+              runs on selected lines Friday-Saturday nights; check station posters for
+              current service and fare details.
+            </p>
+          </details>
+          <details class="note-item">
+            <summary>River boats and hire bikes</summary>
+            <p>
+              River services and public hire bikes are separate products and usually do
+              not count toward Tube/bus daily caps. Use apps for live boat times and
+              bike dock availability.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="page-intro container fade">
+        <h2>Walking, interchanges &amp; airport links</h2>
+        <p>
+          Many Tube “interchanges” are a <strong>long walk in a tunnel</strong>;
+          sometimes leaving the station and walking 500 metres above ground saves
+          time <em>and</em> a zone. Large rail termini (Paddington, King’s Cross,
+          Victoria) connect to buses on the street — follow the blue “Buses”
+          signs. For <strong>Gatwick</strong> and <strong>Stansted</strong>,
+          national rail operators sell their own tickets; Oyster/contactless may
+          only cover part of the route or not apply at all — read the orange
+          route validators before you tap. When in doubt, ask a TfL staff member
+          in a high-vis jacket at the gate line: wrong taps are easier to fix
+          before you travel than after.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer__bar container">
+        <div class="footer-legal-pill">
+          <a href="#">Cookies</a>
+          <span>·</span>
+          <a href="#">Privacy</a>
+          <span>·</span>
+          <a href="#">Terms and conditions</a>
+        </div>
+        <button type="button" class="back-to-top" aria-label="Back to top">
+          ↑
+        </button>
+      </div>
+      <p class="site-footer__meta">
+        London Budget Guide · Student project · 2026
+      </p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+    <script src="../script.js"></script>
+  </body>
+</html>
